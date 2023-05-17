@@ -1,0 +1,9 @@
+footer {
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+  text-shadow: rgb(236, 213, 119) 1px 0 10px;
+}
+.github {
+  color: black;
+}
