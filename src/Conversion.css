@@ -1,0 +1,24 @@
+a#fahrenheit:active, a#celsius:active {
+  color: white;
+}
+
+unit,
+unit,
+unit:target {
+  color: white;
+}
+.temp,
+.temp-celsius {
+  font-size: 60px;
+  padding-top: 0px;
+  color: white;
+}
+.tempChange {
+  text-decoration: none;
+  color: white;
+}
+.unit {
+  font-size: 20px;
+  position: relative;
+  top: -20px;
+}
