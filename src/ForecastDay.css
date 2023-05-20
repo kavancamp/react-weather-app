@@ -1,0 +1,12 @@
+.ForecastDay {
+  width: 300px;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+.day-temperatures {
+  flex-direction: row;
+  padding: 10px;
+}
+.day-temperature-max {
+  padding-right: 10px;
+}
