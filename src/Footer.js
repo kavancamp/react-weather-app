@@ -3,13 +3,13 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div class="Footer">
+    <div className="Footer">
       <a
         className="gitHub"
         href="https://github.com/kavancamp/react-weather-app"
         target="_blank"
-        rel="noreferrer"
         alt="gitHub"
+        rel="noopener noreferrer"
       >
         Coded by Keenah VanCampenhout
       </a>
