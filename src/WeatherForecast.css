@@ -1,0 +1,13 @@
+.WeatherForecast {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  height: 100px;
+  color: white;
+}
+
+.WeatherForecast-temperature-min {
+  opacity: 0.6;
+  margin-left: 5px;
+}
