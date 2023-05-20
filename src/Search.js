@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Search.css";
 import WeatherInfo from "./WeatherInfo";
 import DateFormatted from "./DateFormatted";
+import WeatherForecast from "./WeatherForecast";
 import Conversion from "./Conversion";
 import axios from "axios";
 
@@ -32,7 +33,6 @@ export default function Search(props) {
       speed: Math.round(response.data.wind.speed),
       celsius: Math.round(((response.data.main.temp - 32) * 5) / 9),
       coordinates: response.data.coord,
-      temperature: response.data.main.temp,
     });
     console.log(response.data);
   }
@@ -80,6 +80,7 @@ export default function Search(props) {
         <Conversion data={weather} />
         <WeatherInfo data={weather} />
         <div>{searchForm}</div>
+        <WeatherForecast coordinates={weather.coordinates} />
       </>
     );
   } else {
