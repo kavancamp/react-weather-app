@@ -78,7 +78,7 @@ export default function Search(props) {
           <DateFormatted />
         </ul>
         <Conversion data={weather} />
-        <WeatherInfo data={weather} />
+        <WeatherInfo data={weather}  />
         <div>{searchForm}</div>
         <WeatherForecast coordinates={weather.coordinates} />
       </>
@@ -87,15 +87,8 @@ export default function Search(props) {
     return (
       <>
         <ul>
-          <h1>Milwakee, Wisconsin</h1>
           <DateFormatted />
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-            alt="sunny"
-          />
         </ul>
-        <h1> 25°F</h1>
-        <WeatherInfo defaultCity="Milwaukee" data={weather} />
         <div>{searchForm}</div>
       </>
     );
