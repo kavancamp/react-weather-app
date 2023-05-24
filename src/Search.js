@@ -13,10 +13,8 @@ export default function Search(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(process.env);
     const API_KEY = process.env.REACT_APP_API_KEY;
     console.log(city);
-    //let apiKey = "210d99196a88b9257ed8cb3535a0a0c5";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=imperial`;
     console.log(url);
     axios.get(url).then(displayTemp);
