@@ -13,7 +13,7 @@ export default function Search(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    const API_KEY = process.env.REACT_APP_API_KEY;
+    const API_KEY = "210d99196a88b9257ed8cb3535a0a0c5";
     console.log(city);
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=imperial`;
     console.log(url);
@@ -78,7 +78,7 @@ export default function Search(props) {
           <DateFormatted />
         </ul>
         <Conversion data={weather} />
-        <WeatherInfo data={weather}  />
+        <WeatherInfo data={weather} />
         <div>{searchForm}</div>
         <WeatherForecast coordinates={weather.coordinates} />
       </>
