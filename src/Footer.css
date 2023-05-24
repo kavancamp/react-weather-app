@@ -1,11 +1,10 @@
-footer {
+.Footer {
   text-align: center;
   justify-content: center;
   padding-top: 20px;
   text-shadow: rgb(110, 109, 108) 1px 0 10px;
-  color: white;
 }
-.github {
+a.github {
   color: white;
-  text-decoration: double;
+  text-decoration: none;
 }
